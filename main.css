@@ -1,17 +1,6 @@
-﻿.nav a {
-  color: #5a5a5a;
-  font-size: 11px;
-  font-weight: bold;
-  padding: 14px 10px;
-  text-transform: uppercase;
-}
-
-.nav li {
-  display: inline;
-}
 
 .jumbotron {
-  background-image:url('http://www.desktopwallpaperhd.net/wallpapers/18/0/web-background-website-linux-freedom-upgrade-187984.jpg');
+  background-image:url('https://wallpaperscraft.com/image/line_black_background_route_map_63533_1920x1080.jpg');
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,7 +12,7 @@
 }
 
 .jumbotron h1 {
-  color: #F3E7E5;
+  color: #fff;
   font-size: 48px;  
   font-family: 'Shift', sans-serif;
   font-weight: bold;
@@ -145,6 +134,7 @@
    text-align: center;
    box-sizing: border-box;
    font-size: 26px;
+   color: blue;
 }
 
 
@@ -354,3 +344,163 @@
 .credit a:hover {
    text-decoration: underline;
 }
+body{ overflow-y: scroll; }
+
+
+
+body{
+	background: #D52803 ; 
+}
+.se-container{
+	display: block; 
+	width: 100%;
+	overflow: hidden;
+	box-shadow: 0px 5px 10px #000;
+}
+.se-slope{
+	width: 50%;
+	height: 550px;
+	position: relative;
+	float: left;
+	overflow: hidden;
+}
+.se-slope .se-content{
+	margin: 50px 100px 0px 100px;
+}
+.se-slope-black{
+	background: #000;
+}
+.se-slope-pink{
+	background: #D52803;
+}
+
+.se-slope-black:nth-child(odd):after,
+.se-slope-black:nth-child(even):after{
+	content: '';
+	position: absolute;
+	bottom: 0px;
+	width: 0px;
+	height: 0px;
+	border-top: 275px solid transparent;
+	border-bottom: 275px solid transparent;
+}
+
+
+
+
+.se-slope-black:nth-child(odd):after{
+	border-right: 50px solid #D52803;
+	right: 0px;
+}
+
+
+.se-slope-black:nth-child(even):before{
+	border-left: 60px solid #D52803;
+	left: 0px;
+  }
+
+
+
+.se-slope-pink:nth-child(odd):after,
+.se-slope-pink:nth-child(even):after{
+	content: '';
+	position: absolute;
+	bottom: 0px;
+	width: 0px;
+	height: 0px;
+	border-top: 275px solid transparent;
+	border-bottom: 275px solid transparent;
+}
+.se-slope-pink:nth-child(odd):after{
+	border-right: 50px solid black;
+	right: 0px;
+}
+
+
+
+
+
+
+
+.se-container h3{
+	z-index: 10;
+	font-size: 30px;
+	margin-top: 60px;
+  position: relative;
+	display: inline-block;
+	padding: 15px 20px;
+	line-height: 40px;
+	font-family: 'Bitter', 'Trebuchet MS', Arial;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+}
+.se-slope.se-slope-black h3{
+	background: #D52803;
+  margin-left: 100px;
+}
+.se-slope.se-slope-pink h3{
+	background: #000;
+  margin-left: 110px;
+	color: #D52803;
+}
+
+.se-slope.se-slope-black h3:after,
+.se-slope.se-slope-black h3:before,
+.se-slope.se-slope-pink h3:after,
+.se-slope.se-slope-pink h3:before{
+	content: '';
+	width: 0px;
+	height: 0px;
+	top: 0px;
+	position: absolute;
+}
+.se-slope.se-slope-black h3:after{
+	border-top: 70px solid transparent;
+	border-left: 30px solid #D52803;
+	right: -30px;
+}
+.se-slope.se-slope-black h3:before{
+	border-bottom: 70px solid transparent;
+	border-right: 30px solid #D52803;
+	left: -30px;
+}
+.se-slope.se-slope-pink h3:after{
+	border-top: 70px solid transparent;
+	border-right: 30px solid #000;
+	left: -30px;
+}
+.se-slope.se-slope-pink h3:before{
+	border-bottom: 70px solid transparent;
+	border-left: 30px solid #000;
+	right: -30px;
+}
+
+
+
+
+
+.se-content p{
+  text-align: center;
+  margin-top: -20px;
+}
+
+p{
+  font-size : 14px;
+  font-family: "Arial Black";
+}
+
+#butt{
+  padding-top: 10px;
+}
+
+#parat{
+  color: #D52803;
+}
+
+#mapemeb{
+
+margin: 3px 3px 3px 3px solid black;
+
+}
+
+
+
