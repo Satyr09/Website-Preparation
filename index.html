@@ -103,7 +103,7 @@ font-size: 15;
 
     
 
-    <div class="jumbotron">
+    <div class="jumbotron" id="jumbot">
       <div class="container">
         <h1 style="color:white">Find an answer to all your security questions.</h1>
         <p style="color:white">Access emergency services and more.</p>
@@ -124,17 +124,17 @@ font-size: 15;
     <span class="lines line-2"></span>
     <span class="lines line-3"></span>
   </label>
-   <a href="#" class="menu-item blue"> <i class="fa fa-home"></i> </a>
+   <a href="#jumbot" class="menu-item blue"> <i class="fa fa-home"></i> </a>
   
- <a href="#" class="menu-item green"> <i class="fa fa-ambulance"></i> </a>
+ <a href="#featfirst" class="menu-item green"> <i class="fa fa-ambulance"></i> </a>
   
- <a href="#" class="menu-item red"> <i class="fa fa-comment-o"></i> </a>
+ <a href="#review" class="menu-item red"> <i class="fa fa-comment-o"></i> </a>
  
   <a href="#" class="menu-item purple"> <i class="fa fa-question-circle"></i> </a>
   
- <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a>
+ <a href="#featsecond" class="menu-item orange"> <i class="fa fa-star"></i> </a>
    
-<a href="#" class="menu-item lightblue"> <i class="fa fa-map-marker"></i> </a>
+<a href="#featthird" class="menu-item lightblue"> <i class="fa fa-map-marker"></i> </a>
 </nav>
 
 
@@ -160,7 +160,7 @@ font-size: 15;
 
 
 <section class="se-container">
-	<div class="se-slope se-slope-black">
+	<div class="se-slope se-slope-black" id="featfirst">
 		<article class="se-content">
       <h3><a href="#" style="text-decoration:none"><font color="black">Some headline</font></a></h3>
       
@@ -172,7 +172,7 @@ font-size: 15;
 	</div>
     
     
-	<div class="se-slope se-slope-pink">
+	<div class="se-slope se-slope-pink" id="featsecond">
 				<article class="se-content">
           <h3><font>Some headline</font></h3>
           <p><font color="black"><p><image src="https://www.shareicon.net/data/256x256/2015/08/20/87922_home_512x512.png"></p>
@@ -183,7 +183,7 @@ font-size: 15;
 	
  
     
-    	<div class="se-slope se-slope-pink">
+    	<div class="se-slope se-slope-pink" id="featthird">
 				<article class="se-content">
           <h3><font>Some headline</font></h3>
           <p><font color="black"><p><image src="https://www.shareicon.net/data/256x256/2015/08/20/87922_home_512x512.png"></p>
@@ -211,9 +211,9 @@ font-size: 15;
 <!----fff ---> 
 
 
-<div class="container" style="height: 150px">
-  <h2>Rate and review </h2>
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Give Your Review</button>
+<div class="container" style="height: 150px" id="review">
+  <h2><strong>Rate and review</strong></h2>
+  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Give Your Review</button>
 
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
