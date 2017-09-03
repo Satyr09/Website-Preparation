@@ -20,7 +20,11 @@ border-color: #000000;
 
 
 
-
+<style>
+#faicon{
+font-size: 40px;
+}
+</style>
 <style>
 #subm{
   float: right;
@@ -152,6 +156,7 @@ font-size: 15;
     scrolling="no"
     marginheight="0"
     marginwidth="0"
+    
     src="https://jadavpurrookie.000webhostapp.com/mapbox2.php">
 </iframe>
 </div>
@@ -175,8 +180,8 @@ font-size: 15;
 	<div class="se-slope se-slope-pink" id="featsecond">
 				<article class="se-content">
           <h3><font>Some headline</font></h3>
-          <p><font color="black"><p><image src="https://www.shareicon.net/data/256x256/2015/08/20/87922_home_512x512.png"></p>
-			<p>Knowing about your locality has never been easier.Check housing prices,real estate history for your locality at the click of a mouse.</p>
+          <p><font color="black"><p><image src="https://i.imgur.com/YVmctsJ.png"></p>
+			<p>Evaluate the roads near you ,and leave a review to help us understand better.</p>
 			<p id="butt"><a href="#" style="text-decoration:none">Learn More</a></p>
 		</article>
 	</div>
@@ -186,9 +191,9 @@ font-size: 15;
     	<div class="se-slope se-slope-pink" id="featthird">
 				<article class="se-content">
           <h3><font>Some headline</font></h3>
-          <p><font color="black"><p><image src="https://www.shareicon.net/data/256x256/2015/08/20/87922_home_512x512.png"></p>
-			<p>Knowing about your locality has never been easier.Check housing prices,real estate history for your locality at the click of a mouse.</p>
-			<p id="butt"><a href="#" style="text-decoration:none">Learn More</a></p>
+          <p id="faicon" style="padding-top: 10px"><i class="fa fa-medkit fa-5x" ></i></p>
+			<p>In a medical emergency ? Use this feature to know about thhe hospitals nearest to you.</p>
+			<p id="butt"><a href="https://jadavpurrookie.000webhostapp.com/hospital.php" style="text-decoration:none">Click here.</a></p>
 		</article>
 	</div>
     
@@ -226,12 +231,12 @@ font-size: 15;
         <div class="modal-body">
           
 <div >          
-<form>
+<form action="info.php" method="post">
   <h1 style="border-bottom:5px solid red ; width: 40% ; margin-top: -10px; ">User Review</h1>
 <div class="row" style="padding-top : 7px">
 
 <div class="col col-md-6 col-sm-6">
- <label for="rate">Rate the Road:</label>
+ <label for="rate">Rate the Road condition on a scale of 5:</label>
  <div class="stars">
   <form action="">
     <input class="star star-5" id="star-5" type="radio" name="star"/>
@@ -251,20 +256,53 @@ font-size: 15;
   <div id="reply">
     <label for="mail" style="padding-bottom: 15px">Did the Roads have proper lighting ?</label>
     <label>
-    <input type="radio" id="lighting" name="road_lighting">
+    <input type="radio" id="road_lighting" name="road_lighting">
       Yes
     </label>
      <label>
-    <input type="radio" id="lighting" name="road_lighting">
+    <input type="radio" id="road_lighting" name="road_lighting">
       No
     </label>
   </div>
  </div>
 </div>
-<div class="row" style="text-align:center ; padding-top : 50px;">
+
+<div class="row" style="padding-top : 7px">
+
+<div class="col col-md-6 col-sm-6">
+ <label for="rate">How safe was the road on a scale of 5 ?</label>
+ <div class="stars">
+  <form action="">
+    <input class="star star-5" id="star-10" type="radio" name="stars"/>
+    <label class="star star-5" for="star-10"></label>
+    <input class="star star-4" id="star-9" type="radio" name="stars"/>
+    <label class="star star-4" for="star-9"></label>
+    <input class="star star-3" id="star-8" type="radio" name="stars"/>
+    <label class="star star-3" for="star-8"></label>
+    <input class="star star-2" id="star-7" type="radio" name="stars"/>
+    <label class="star star-2" for="star-7"></label>
+    <input class="star star-1" id="star-6" type="radio" name="stars"/>
+    <label class="star star-1" for="star-6"></label>
+  </form>
+</div>
+</div>
+<div class="col col-md-6 col-sm-4">
+  <div id="reply">
+    <label for="mail" style="padding-bottom: 15px">Were there signs of disturbance on the road ?</label>
+    <label>
+    <input type="radio" id="road_lighting" name="road_lighting">
+      Yes
+    </label>
+     <label>
+    <input type="radio" id="road_lighting" name="road_lighting">
+      No
+    </label>
+  </div>
+ </div>
+</div><div class="row" style="text-align:center ; padding-top : 50px;">
 <div id="message">
-    <label for="msg">Your message:</label>
-    <textarea id="msg" name="user_message" style="width : 80%"></textarea>
+    <label for="msg">Your comment:</label>
+    <input type="text" id="msg" name="msg"></label>
   </div>
  </div>
 </form>
@@ -277,7 +315,7 @@ font-size: 15;
 
 
      <div class="modal-footer" >
-          <button type="button" class="btn btn-default" id="subm" >Submit</button>
+          <button type="button" class="btn btn-default"  data-dismiss="modal" id="subm" >Submit</button>
      </div>
       </div>
       
